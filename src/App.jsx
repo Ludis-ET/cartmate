@@ -1,10 +1,12 @@
 import { Header } from "./components/Header";
-import { ProductList } from "./components/ProductList";
+import { ProductList } from "./pages/ProductList";
+import { ALLRoutes } from "./routes/ALLRoutes";
 
 function App() {
   return (
     <>
       <Header />
+      <ALLRoutes />
       <ProductList />
     </>
   );
