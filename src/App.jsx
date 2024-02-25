@@ -1,13 +1,13 @@
-import { Header } from "./components/Header";
-import { ProductList } from "./pages/ProductList";
-import { ALLRoutes } from "./routes/ALLRoutes";
+import { AllRoutes } from "./routes/AllRoutes";
+import { Header } from "./components";
+import './App.css';
 
 function App() {
   return (
-    <>
+    <div className="App">
       <Header />
-      <ALLRoutes />
-    </>
+      <AllRoutes />
+    </div>
   );
 }
 
