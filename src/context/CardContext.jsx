@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 
 const initialState = {
   cardList: [],
@@ -13,5 +13,6 @@ export const cardProvider = ({ children }) => {
 };
 
 export const useCart = () => {
-    
-}
+  const context = useContext(cartContext);
+  return context;
+};
